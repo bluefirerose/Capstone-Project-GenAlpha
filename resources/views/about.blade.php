@@ -79,6 +79,7 @@
             </div>
         </nav>
     </header>
+    <hr class="line1">
         <section>
             <div class="text-center mt-5"><h1>"Embrace the Future of Tech with Gen-Alpha: Empowering Technology Enthusiasts."</h1></div>
             <div class="container">
@@ -88,7 +89,6 @@
                     </div>
                     <div class="col-md-12">
                     <p>Gen-Alpha is an e-commerce platform dedicated to providing a wide range of computer products to meet your technology needs. With a focus on quality, affordability, and customer satisfaction, we strive to offer the best selection of computer hardware, software, peripherals, and accessories.</p>
-                    <p>Our mission is to empower individuals and businesses by providing them with the latest and most reliable computer products on the market. Whether you are a casual user, a gaming enthusiast, or a professional in need of high-performance equipment, Gen-Alpha has the right solutions for you.</p>
                     <p>At Gen-Alpha, we understand the importance of technology in today's world. We believe that everyone should have access to the tools and resources they need to thrive in the digital age. That's why we have curated a diverse catalog of products from trusted brands, ensuring that you can find exactly what you're looking for.</p>
                     <p>With a user-friendly website, secure payment options, and efficient delivery services, we make it convenient for you to
                     </div>
@@ -99,9 +99,9 @@
                     <div class="col-md-12">
                     <p>In April of 2023, three passionate individuals named Donald, Rain, and Rose embarked on a journey to build Gen-Alpha, their dream e-commerce platform. They attended the KodeGo bootcamp, where they learned web development skills.
 
-                    With their newfound knowledge, they worked tirelessly, coding day and night to create a user-friendly website. Overcoming challenges and supporting each other, they built a fully functional prototype.
+                    With their newfound knowledge, they worked tirelessly, coding day and night to create a user-friendly website. Overcoming challenges and supporting each other, they built a fully functional prototype.</p>
 
-                    Finally, Gen-Alpha was launched to great acclaim. Users were impressed by its sleek design, extensive product offerings, and seamless user experience.
+                    <p>Finally, Gen-Alpha was launched to great acclaim. Users were impressed by its sleek design, extensive product offerings, and seamless user experience.
 
                     Today, Gen-Alpha thrives as a one-stop destination for computer products, a testament to the team's perseverance and shared vision. Their journey proves that with dedication and hard work, dreams can become a reality.</p>
 
@@ -110,8 +110,6 @@
                     </div>
                     <div class="col-md-12">
                     <p>Our mission is to empower individuals and businesses by providing them with the latest and most reliable computer products on the market. Whether you are a casual user, a gaming enthusiast, or a professional in need of high-performance equipment, Gen-Alpha has the right solutions for you.</p>
-                    <p>At Gen-Alpha, we understand the importance of technology in today's world. We believe that everyone should have access to the tools and resources they need to thrive in the digital age. That's why we have curated a diverse catalog of products from trusted brands, ensuring that you can find exactly what you're looking for.</p>
-                    <p>With a user-friendly website, secure payment options, and efficient delivery services, we make it convenient for you to
                     </div>
 
 
