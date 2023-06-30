@@ -36,3 +36,7 @@ Route::get('/orders', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+
+Route::get('/productdescription', function () {
+    return view('productdescription');
+});
