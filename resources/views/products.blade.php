@@ -63,7 +63,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('home') }}">Home</a>
+                            <a class="nav-link active" href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('about') }}">About</a>

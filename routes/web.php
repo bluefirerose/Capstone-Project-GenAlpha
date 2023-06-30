@@ -33,3 +33,7 @@ Route::get('/orders', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+
+Route::get('/cart', function () {
+    return view('cart');
+});
