@@ -13,11 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 
@@ -36,7 +33,10 @@ Route::get('/orders', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+<<<<<<< HEAD
 
 Route::get('/productdescription', function () {
     return view('productdescription');
 });
+=======
+>>>>>>> 4b7979076445a7051d67abe6b2c4d3125fad5674
