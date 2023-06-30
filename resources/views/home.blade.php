@@ -35,6 +35,11 @@
             margin: auto;
         }
 
+        footer {
+            background-color: gray;
+            text-align: center;
+        }
+
         @media (min-width: 768px) and (max-width: 991.98px) {
             .row {
                 flex-direction: row;
@@ -143,20 +148,62 @@
         </div>
         <hr class="line2">
         <div class="container mt-5">
-            <dic class="row">
+            <div class="row">
                 <div class="col-md-4">
                     <img src="package.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
                 </div>
                 <div class="col-md-4">
-                    <img src="laptop.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
+                    <img src="laptop.svg" style="width: 90%; height: 90%;" alt="Laptop">
                 </div>
                 <div class="col-md-4">
-                    <img src="monitor.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
+                    <img src="monitor.svg" style="width: 90%; height: 90%;" alt="Monitor">
                 </div>
-            </dic>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="gc.svg" style="width: 90%; height: 90%;" alt="Graphic Card">
+                </div>
+                <div class="col-md-4">
+                    <img src="mb.svg" style="width: 90%; height: 90%;" alt="Mother Board">
+                </div>
+                <div class="col-md-4">
+                    <img src="processor.svg" style="width: 90%; height: 90%;" alt="Processor">
+                </div>
+            </div>
         </div>
     </section>
 
+    <section>
+        <div class="text-center">
+            <h1>Featured Items</h1>
+        </div>
+        <hr class="line2">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                <h2>ALL WHITE INTEL 13 10TH GEN COMPLETE PC PACKAGE</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <ul class="a m-5">
+                    <li>Intel Core i3 10th genw/ integrated CPU</li>
+                    <li>Gigabyte H410M Motherboard</li>
+                    <li>Seagate 500gb HDD</li>
+                    <li>Biostar 120GB SSD</li>
+                </ul>
+                </div>
+                <div class="col-md-6">
+                <img src="featureditems.svg" style="width: 90%; height: 90%;" alt="Computer Package">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <h3>Group 4</h3>
+    </footer>
 
 
 
