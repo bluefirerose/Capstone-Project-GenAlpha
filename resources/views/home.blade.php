@@ -142,10 +142,16 @@
             <h1>Category</h1>
         </div>
         <hr class="line2">
-        <div class="container">
+        <div class="container mt-5">
             <dic class="row">
                 <div class="col-md-4">
-                    
+                    <img src="package.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
+                </div>
+                <div class="col-md-4">
+                    <img src="laptop.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
+                </div>
+                <div class="col-md-4">
+                    <img src="monitor.svg" style="width: 90%; height: 90%;" alt="Personal Computer">
                 </div>
             </dic>
         </div>
