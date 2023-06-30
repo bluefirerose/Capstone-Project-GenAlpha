@@ -77,7 +77,7 @@
     <header>
         <nav class="navbar navbar-expand-lg ms-1" >
             <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url('home') }}">
+            <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="gen-alpha-removebg-1.svg" style="width: 250%; height: 250%;" alt="Gen Alpha Logo">
             </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -86,7 +86,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('home') }}">Home</a>
+                            <a class="nav-link active" href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('about') }}">About</a>
