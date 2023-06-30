@@ -28,11 +28,19 @@
             margin: auto;
         }
 
-        hr.line2 {
-            border: 5px solid #FCA75B;
-            border-radius: 5px;
-            width:20%;
+        .account-page{
+            padding: 50px 0;
+            background: radial-gradient(#fff, #ffd6d6);
+        }
+        .form-container{
+            background: #fff;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            text-align: center:
+            padding: 20px 0;
             margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
         }
 
         footer {
@@ -81,7 +89,27 @@
     </header>
     <hr class="line1">
     
-    <
+    <section class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="pc.svg" alt="Logo" width="100%">
+                </div>
+                <div class="col-md-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Login</span>
+                            <span>Register</span>
+                        </div>
+
+                        <form>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
