@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             margin: 0;
             padding: 0;
         }
+
         .text-e7 {
             color: #E7C160;
         }
@@ -24,23 +26,24 @@
         hr.line1 {
             border: 10px solid #FCA75B;
             border-radius: 5px;
-            width:80%;
+            width: 80%;
             margin: auto;
         }
 
-        .account-page{
+        .account-page {
             padding: 50px 0;
             background: radial-gradient(#fff, #ffd6d6);
         }
-        .form-container{
+
+        .form-container {
             background: #fff;
             width: 300px;
             height: 400px;
             position: relative;
-            text-align: center:
+            text-align: center;
             padding: 20px 0;
             margin: auto;
-            box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -55,13 +58,14 @@
         }
     </style>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg ms-1" >
+        <nav class="navbar navbar-expand-lg ms-1">
             <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="gen-alpha-removebg-1.svg" style="width: 250%; height: 250%;" alt="Gen Alpha Logo">
-            </a>
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="gen-alpha-removebg-1.svg" style="width: 250%; height: 250%;" alt="Gen Alpha Logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -88,7 +92,7 @@
         </nav>
     </header>
     <hr class="line1">
-    
+
     <section class="account-page">
         <div class="container">
             <div class="row">
@@ -106,9 +110,9 @@
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                         </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
@@ -120,9 +124,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
+
 </html>
