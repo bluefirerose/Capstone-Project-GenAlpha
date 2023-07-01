@@ -35,6 +35,15 @@
             width:20%;
             margin: auto;
         }
+        .admin-container {
+            background: #fff;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            padding: 20px 0;
+            margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+        }
 
         footer {
             background-color: gray;
@@ -105,10 +114,43 @@
             <h1>Admin Panel</h1>
         </div>
         <hr class="line2">
-        <div class="container mt-5">
-            <div class="row">
-                
+        
+        <section class="account-page">
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-md-3 admin-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container  border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container  border rounded ">
+                    
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 admin-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container  border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 admin-container  border rounded ">
+                    
+                </div>
+            </div>
         </div>
+    </section>
+
+
+
     </section>
 </body>
 </html>

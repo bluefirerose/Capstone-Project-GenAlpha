@@ -29,12 +29,25 @@
             width:80%;
             margin: auto;
         }
-        hr.line2 {
-            border: 5px solid #FCA75B;
-            border-radius: 5px;
-            width:20%;
+        .form-container {
+            background: #fff;
+            width: 500px;
+            height: 600px;
+            position: relative;
+            padding: 20px 0;
             margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
         }
+        .product-container {
+            background: #fff;
+            width: 300px;
+            height: 400px;
+            position: relative;
+            padding: 20px 0;
+            margin: auto;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+        }
+
 
         footer {
             background-color: gray;
@@ -100,20 +113,78 @@
     </header>
     <hr class="line1">
 
-    <section>
-        <div class="container mt-5">
-        <section class="account-page">
+    <section class="account-page">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="pc.svg" alt="Logo" width="100%">
+            <div class="row justify-content-center">
+                <div class="col-md-12 form-container m-5 p-5 border rounded">
+                    <h1 class="fw-bold">Add Product</h1>
+                    <form id="addProduct">
+                    <input id="productname" class="form-control mt-3" type="text" name="productname" placeholder="Enter product name" required />
+                    <input id="productprice" class="form-control mt-3" type="text" name="productprice" placeholder="Enter product price" required />
+                    <div class="mt-3">
+                         <select class="custom-select" id="inputGroupSelect02">
+                            <option selected>Choose...</option>
+                            <option value="1">Computer Package</option>
+                         <option value="2">Laptop</option>
+                         <option value="3">Monitor</option>
+                         <option value="4">Graphic Card</option>
+                         <option value="5">Motherboard</option>
+                         <option value="6">Processor</option>
+                        </select>
+                        </div>
+                        <label for="formFileSm" class="form-label mt-3">Upload photo</label>
+                        <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                        <div class="form-outline">
+                        <textarea class="form-control mt-3" id="productdescription" rows="5" placeholder="Product Description"></textarea>
+        
+                        </div>                         
+                    <button class="btn btn-dark mt-3">Add Product</button>
+                    
+                    </form>
                 </div>
-                <div class="col-md-6 form-container m-5 p-5 border rounded">
-                  
+            </div>
+            <div class="row">
+                <div class="col-md-3 product-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container  border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container  border rounded ">
+                    
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 product-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container  border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container border rounded ">
+                    
+                </div>
+                <div class="col-md-3 product-container  border rounded ">
+                    
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="mt-5">
+        <h3>Group 4</h3>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
+
                 
         </div>
     </section>
