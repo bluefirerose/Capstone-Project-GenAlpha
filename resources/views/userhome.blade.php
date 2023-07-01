@@ -58,7 +58,7 @@
             </div>
         </div>
     </header>
-    <header>
+    <header>    
         <nav class="navbar navbar-expand-lg ms-1" >
             <div class="container-fluid">
             <a class="navbar-brand" href="{{ url('/') }}">
