@@ -79,7 +79,7 @@
                             <a class="nav-link active" href="{{ url('admin') }}">Home</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('adminproduct') }}">Product</a>
+                            <a class="nav-link active" href="{{ url('about') }}"><strong>Product</strong></a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('products') }}">Orders</a>
