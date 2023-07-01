@@ -120,9 +120,9 @@
                     <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="pc.svg" alt="Rain" style="width:100%">
+        <img src="pc.svg" alt="Rain" style="width:70%">
         <div class="caption">
-          <p>Rain Christian</p>
+            <h5><bold>Rain Christian</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
@@ -130,9 +130,9 @@
   </div>
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="pc.svg" alt="Donald" style="width:100%">
+        <img src="pc.svg" alt="Donald" style="width:70%">
         <div class="caption ">
-          <p>Donald</p>
+        <h5><bold>Donald</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
@@ -140,9 +140,9 @@
   </div>
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="pc.svg" alt="Rosemarie Exile" style="width:100%">
-        <div class="caption">
-          <p>Rosemarie Exile</p>
+        <img src="/developers/rose.svg" alt="Rosemarie Exile" style="width:70%">
+        <div class="caption m-3">
+          <h5><bold>Rosemarie Exile</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
