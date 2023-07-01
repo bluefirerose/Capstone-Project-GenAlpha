@@ -115,17 +115,23 @@
                 </div>
                 <div class="col-md-6 form-container m-5 p-5 border rounded">
                 <h1 class="fw-bold">Create an account</h1>
-                    <form id="registrationForm">
+                    @if(Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{Session::get('success')}}
+                        </div>
+                    @endif
+                <form action="{{ route('register')}}" method="POST" id="registrationForm">
+                        @csrf
                         <label for="email" class="mt-3">Email Address</label>
-                        <input id="email" class="form-control" type="email" required>
+                        <input id="email" class="form-control" type="email" name="email" required>
                         <label for="firstname" class="mt-3">First name</label>
-                        <input id="firstname" class="form-control" type="text" required>
+                        <input id="firstname" class="form-control" type="text" name="firstname" required>
                         <label for="lastname" class="mt-3">Last name</label>
-                        <input id="lastname" class="form-control" type="text" required>
+                        <input id="lastname" class="form-control" type="text" name="lastname" required>
                         <label for="birthdate" class="mt-3">Birth date</label>
-                        <input id="birthdate" class="form-control" type="date" required>
+                        <input id="birthdate" class="form-control" type="date" name="birthdate" required>
                         <label for="password" class="mt-2">Password</label>
-                        <input id="password" class="form-control" type="password" required>
+                        <input id="password" class="form-control" type="password" name="password" required>
                         <label for="confirm_password" class="mt-2">Confirm password</label>
                         <input id="confirm_password" class="form-control" type="password" required>
                         <button class="btn btn-dark mt-2">Submit</button>
