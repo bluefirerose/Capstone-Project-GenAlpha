@@ -69,7 +69,7 @@
                             <a class="nav-link active" href="{{ url('about') }}">About</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('products') }}">Products</a>
+                            <a class="nav-link active" href="{{ url('products') }}"><strong>Products</strong></a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('orders') }}">Orders</a>
