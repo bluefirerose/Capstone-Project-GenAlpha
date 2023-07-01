@@ -101,12 +101,19 @@
     <hr class="line1">
 
     <section>
-        <div class="text-center mt-5">
-            <h1>Admin Panel</h1>
-        </div>
-        <hr class="line2">
         <div class="container mt-5">
+        <section class="account-page">
+        <div class="container">
             <div class="row">
+                <div class="col-md-6">
+                    <img src="pc.svg" alt="Logo" width="100%">
+                </div>
+                <div class="col-md-6 form-container m-5 p-5 border rounded">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
                 
         </div>
     </section>

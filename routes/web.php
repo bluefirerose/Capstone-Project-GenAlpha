@@ -54,6 +54,14 @@ Route::get('/userhome', function () {
     return view('userhome');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
+
+Route::get('/adminproduct', function () {
+    return view('adminproduct');
+});
+
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/register', [AuthController::class, 'register'])->name('register');
     Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
