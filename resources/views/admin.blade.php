@@ -29,6 +29,12 @@
             width:80%;
             margin: auto;
         }
+        hr.line2 {
+            border: 5px solid #FCA75B;
+            border-radius: 5px;
+            width:20%;
+            margin: auto;
+        }
 
         footer {
             background-color: gray;
@@ -46,7 +52,7 @@
     <div class="banner" data-bs-theme="dark">
             <div class="d-flex justify-content-end">
                 <p class=" px-lg-3 d-inline-flex">
-                <!-- <div class="container">
+                <div class="container">
        <h1> Welcome, {{ Auth::user()->username }}</h1>
     </div>
                 <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
@@ -55,7 +61,7 @@
                 <button class="btn btn-danger" type="submit">Logout</button>
             </form>
                 </p>
-            </div> -->
+            </div>
         </div>
     </header>
     <header>
@@ -70,19 +76,22 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('/') }}">Home</a>
+                            <a class="nav-link active" href="{{ url('admin') }}">Home</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('about') }}">About</a>
+                            <a class="nav-link active" href="{{ url('about') }}">Product</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('products') }}">Products</a>
+                            <a class="nav-link active" href="{{ url('products') }}">Orders</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('orders') }}">Orders</a>
+                            <a class="nav-link active" href="{{ url('orders') }}">Admin</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('contacts') }}">Contacts</a>
+                            <a class="nav-link active" href="{{ url('contacts') }}">User</a>
+                        </li>
+                        <li class="nav-item px-lg-3">
+                            <a class="nav-link active" href="{{ url('contacts') }}">Messages</a>
                         </li>
                     </ul>
                 </div>
@@ -90,5 +99,16 @@
         </nav>
     </header>
     <hr class="line1">
+
+    <section>
+        <div class="text-center mt-5">
+            <h1>Admin Panel</h1>
+        </div>
+        <hr class="line2">
+        <div class="container mt-5">
+            <div class="row">
+                
+        </div>
+    </section>
 </body>
 </html>
