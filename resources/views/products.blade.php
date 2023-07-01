@@ -159,7 +159,11 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <!-- In your HTML file -->
+                                        <form action="{{ route('product.description') }}" method="get">
+                                        <button type="submit" class="btn btn-primary">Go Somewhere</button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +173,11 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <!-- In your HTML file -->
+                                        <form action="{{ route('product.description') }}" method="get">
+                                        <button type="submit" class="btn btn-primary">Go Somewhere</button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +187,10 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <form action="{{ route('product.description') }}" method="get">
+                                        <button type="submit" class="btn btn-primary">Go Somewhere</button>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                             </div>

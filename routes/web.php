@@ -65,3 +65,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/userhome', [HomeController::class, 'index']);
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 });
+
+
+Route::get('/product/description', 'ProductController@showDescription')->name('product.description');
+
