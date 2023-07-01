@@ -69,7 +69,7 @@
             <div class="d-flex justify-content-end">
                 <p class=" px-lg-3 d-inline-flex">
                     <a class="nav-link active" href="{{ url('/login') }}"><strong>Login</strong> / </a> 
-                    <a class="nav-link active" href="{{ url('register') }}"> Register</a>
+                    <a class="nav-link active" href="{{ url('register') }}"> Sign up</a>
                 </p>
             </div>
         </div>
