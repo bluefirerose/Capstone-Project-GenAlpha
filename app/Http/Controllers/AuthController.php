@@ -28,4 +28,27 @@ class AuthController extends Controller
 
         return back()->with('success', 'Register successfully');
     }
+
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function loginPost(Request $request){
+        $credentials =[
+            'email'=> $request->email,
+            'password'=> $request->password,
+        ];
+
+        if (Auth::attempt($credentials)){
+            return redirect('/userhome')->with('success','Login Success');
+        }
+        return back()->with('error','Email or Password is incorrect');
+    }
+    public function logout()
+    {
+        Auth::logout();
+ 
+        return redirect()->route('login');
+    }
 }

@@ -115,11 +115,17 @@
                 </div>
                 <div class="col-md-6 form-container m-5 p-5 border rounded">
                     <h1 class="fw-bold">Login</h1>
-                    <form id="loginForm">
+                    @if(Session::has('error'))
+                        <div class="alert alert-danger" role="alert">
+                            {{Session::get('error')}}
+                        </div>
+                    @endif
+                    <form action="{{route('login')}}" method="POST" id="loginForm">
+                    @csrf
                     <label for="email" class="mt-3">Email Address</label>
-                    <input id="email" class="form-control" type="email" required />
+                    <input id="email" class="form-control" type="email" name="email" required />
                     <label for="password" class="mt-2">Password</label>
-                    <input id="password" class="form-control" type="password" required />
+                    <input id="password" class="form-control" type="password" name="password" required />
                     <button class="btn btn-dark mt-2">Login</button>
                     <a href="register.html" class="ms-3 align-middle">Create an account</a>
                     </form>
