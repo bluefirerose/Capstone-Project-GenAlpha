@@ -14,13 +14,21 @@ class AuthController extends Controller
         return view('register');
     }
 
-    public function registerPost (Request $request)
+    public function registerPost(Request $request)
     {
+
+        $existingUser = User::where('email', $request->email)->first();
+
+        if ($existingUser) {
+            return back()->with('error', 'Email is already registered');
+        }
+
+
         $user = new User();
 
         $user->username = $request->username;
         $user->email = $request->email;
-        $user->password = Hash::make($request ->password);
+        $user->password = Hash::make($request->password);
 
         $user->save();
 
@@ -32,21 +40,22 @@ class AuthController extends Controller
         return view('login');
     }
 
-    public function loginPost(Request $request){
-        $credentials =[
-            'username'=> $request->username,
-            'password'=> $request->password,
+    public function loginPost(Request $request)
+    {
+        $credentials = [
+            'username' => $request->username,
+            'password' => $request->password,
         ];
 
-        if (Auth::attempt($credentials)){
-            return redirect('/userhome')->with('success','Login Success');
+        if (Auth::attempt($credentials)) {
+            return redirect('/userhome')->with('success', 'Login Success');
         }
-        return back()->with('error','Email or Password is incorrect');
+        return back()->with('error', 'Email or Password is incorrect');
     }
     public function logout()
     {
         Auth::logout();
- 
+
         return redirect()->route('/');
     }
 }
