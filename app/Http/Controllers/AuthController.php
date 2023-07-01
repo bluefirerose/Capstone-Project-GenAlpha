@@ -18,10 +18,8 @@ class AuthController extends Controller
     {
         $user = new User();
 
-        $user->firstname = $request->firstname;
-        $user->lastname = $request->lastname;
+        $user->username = $request->username;
         $user->email = $request->email;
-        $user->birthdate = $request->birthdate;
         $user->password = Hash::make($request ->password);
 
         $user->save();
@@ -36,7 +34,7 @@ class AuthController extends Controller
 
     public function loginPost(Request $request){
         $credentials =[
-            'email'=> $request->email,
+            'username'=> $request->username,
             'password'=> $request->password,
         ];
 

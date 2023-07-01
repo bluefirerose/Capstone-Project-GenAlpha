@@ -420,15 +420,21 @@ form.sign-in-form {
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+        @if(Session::has('error'))
+                        <div class="alert alert-danger" role="alert">
+                            {{Session::get('error')}}
+                        </div>
+                    @endif
+                    <form action="{{route('login')}}" method="POST"  class="sign-in-form" id="loginForm">
+                    @csrf
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" name="username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" name="password"/>
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
@@ -447,19 +453,25 @@ form.sign-in-form {
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+          @if(Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{Session::get('success')}}
+                        </div>
+                    @endif
+                <form action="{{ route('register')}}" method="POST" class="sign-up-form" id="registrationForm" >
+                        @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" name="username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" name="email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" name="password"/>
             </div>
             <input type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
