@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
     <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
@@ -54,9 +54,8 @@
             margin-top : 100px;
         }
     </style>
-=======
+
     <title>Contacts</title>
->>>>>>> 56063d90c872029fb8ba2d193edd169ee04dd734
 </head>
 <body>
 <header>
