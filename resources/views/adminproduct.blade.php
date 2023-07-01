@@ -53,7 +53,7 @@
             <div class="d-flex justify-content-end">
                 <p class=" px-lg-3 d-inline-flex">
                 <div class="container">
-       <h1> Welcome, {{ Auth::user()->username }}</h1>
+       <h1> Welcome, Admin{{ Auth::user()->username }}</h1>
     </div>
                 <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
                 @csrf
