@@ -68,7 +68,7 @@
     <div class="banner" data-bs-theme="dark">
             <div class="d-flex justify-content-end">
                 <p class=" px-lg-3 d-inline-flex">
-                    <a class="nav-link active" href="{{ url('/login') }}"><strong>Login</strong> / </a> 
+                    <a class="nav-link active" href="{{ url('login') }}"><strong>Login</strong> / </a> 
                     <a class="nav-link active" href="{{ url('register') }}"> Sign up</a>
                 </p>
             </div>
@@ -127,7 +127,7 @@
                     <label for="password" class="mt-2">Password</label>
                     <input id="password" class="form-control" type="password" name="password" required />
                     <button class="btn btn-dark mt-2">Login</button>
-                    <a href="register.html" class="ms-3 align-middle">Create an account</a>
+                    <a href="{{route('register')}}" class="ms-3 align-middle">Create an account</a>
                     </form>
                 </div>
             </div>
