@@ -458,7 +458,7 @@ form.sign-in-form {
                             {{Session::get('success')}}
                         </div>
                     @endif
-                <form action="{{ route('/register')}}" method="POST" class="sign-up-form" id="registrationForm" >
+                <form action="{{ route('register')}}" method="POST" class="sign-up-form" id="registrationForm" >
                         @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
