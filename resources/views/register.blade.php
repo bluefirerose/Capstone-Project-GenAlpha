@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,7 +43,7 @@
         .form-container {
             background: #fff;
             width: 500px;
-            height: 400px;
+            height: 650px;
             position: relative;
             padding: 20px 0;
             margin: auto;
@@ -104,14 +104,22 @@
                     <img src="pc.svg" alt="Logo" width="100%">
                 </div>
                 <div class="col-md-6 form-container m-5 p-5 border rounded">
-                    <h1 class="fw-bold">Login</h1>
-                    <form id="loginForm">
-                    <label for="email" class="mt-3">Email Address</label>
-                    <input id="email" class="form-control" type="email" required />
-                    <label for="password" class="mt-2">Password</label>
-                    <input id="password" class="form-control" type="password" required />
-                    <button class="btn btn-dark mt-2">Login</button>
-                    <a href="register.html" class="ms-3 align-middle">Create an account</a>
+                <h1 class="fw-bold">Create an account</h1>
+                    <form id="registrationForm">
+                        <label for="email" class="mt-3">Email Address</label>
+                        <input id="email" class="form-control" type="email" required>
+                        <label for="firstname" class="mt-3">First name</label>
+                        <input id="firstname" class="form-control" type="text" required>
+                        <label for="lastname" class="mt-3">Last name</label>
+                        <input id="lastname" class="form-control" type="text" required>
+                        <label for="birthdate" class="mt-3">Birth date</label>
+                        <input id="birthdate" class="form-control" type="date" required>
+                        <label for="password" class="mt-2">Password</label>
+                        <input id="password" class="form-control" type="password" required>
+                        <label for="confirm_password" class="mt-2">Confirm password</label>
+                        <input id="confirm_password" class="form-control" type="password" required>
+                        <button class="btn btn-dark mt-2">Submit</button>
+                        <a href="login.html" class="ms-3 align-middle">I already have an account</a>
                     </form>
                 </div>
             </div>
