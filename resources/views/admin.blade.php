@@ -22,19 +22,17 @@
         body {
             background-color: #FBF6F1;
         }
+     
 
-        hr.line1 {
-            border: 10px solid #FCA75B;
-            border-radius: 5px;
-            width:80%;
-            margin: auto;
-        }
-        hr.line2 {
-            border: 5px solid #FCA75B;
-            border-radius: 5px;
-            width:20%;
-            margin: auto;
-        }
+        .navbar-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin-top: 20px; /* Optional: add some top margin for spacing */
+    }
 
         footer {
             background-color: gray;
@@ -53,7 +51,7 @@
             <div class="d-flex justify-content-end">
                 <p class=" px-lg-3 d-inline-flex">
                 <div class="container">
-       <h1> Welcome, {{ Auth::user()->username }}</h1>
+       <h1> Welcome, Admin {{ Auth::user()->username }}</h1>
     </div>
                 <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
                 @csrf
@@ -64,25 +62,33 @@
             </div>
         </div>
     </header>
-    <header>
-        <nav class="navbar navbar-expand-lg ms-1" >
+    <div class="row">
+        <div class="col-md-12 container-fluid">
+            <nav class="navbar ms-1 flex-column" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ url('/admin') }}">
+                        <img src="gen-alpha-removebg-1.svg" style="width: 250%; height: 250%;" alt="Gen Alpha Logo">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 d-flex flex-column flex-shrink-0 p-2 " style=" height: calc(100vh - 7.5rem); ">
+            <div class="card card-body flex-fill">
+            <nav class="navbar ms-1 flex-column" >
             <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="gen-alpha-removebg-1.svg" style="width: 250%; height: 250%;" alt="Gen Alpha Logo">
-            </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-collapse" >
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('admin') }}">Home</a>
+                        <li class=" px-lg-3">
+                            <a class="nav-link active" href="{{ url('admin') }}"><strong>Dashboard</strong></a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('about') }}">Product</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('products') }}">Orders</a>
+                            <a class="nav-link active" href="{{ url('products') }}">Profile</a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('orders') }}">Admin</a>
@@ -97,18 +103,37 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <hr class="line1">
+            </div>
+        </div>
+        <div class="col-10 d-flex flex-column flex-shrink-0 p-2 " style=" height: calc(100vh - 7.5rem); ">
+            <div class="card card-body flex-fill">
+                <div class="row">
+                    <div class="col-2 flex-fill" style="border-right: 1px solid black;">
+                        first column - the border line should extend to the bottom of the parent card
+                    </div>
+                    <div class="col-10 flex-fill">
+                                    second column
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section>
-        <div class="text-center mt-5">
-            <h1>Admin Panel</h1>
+
+
+
+        <div class="col-md-3 border">
+        
         </div>
-        <hr class="line2">
-        <div class="container mt-5">
-            <div class="row">
-                
+        <div class="col-md-9">
+            
+
+
+        
         </div>
-    </section>
+    </div>
+        
+       
+    
 </body>
 </html>
