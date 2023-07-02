@@ -173,45 +173,14 @@
   </div>
 </div>
 
-
+        <div class="displayproducts">
+            
+        </div>
 
 
             </div>
         </div>
     </div>
-
-    <section class="account-page">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 form-container m-5 p-5 border rounded">
-                    <h1 class="fw-bold">Add Product</h1>
-                    <form id="addProduct">
-                    <input id="productname" class="form-control mt-3" type="text" name="productname" placeholder="Enter product name" required />
-                    <input id="productprice" class="form-control mt-3" type="text" name="productprice" placeholder="Enter product price" required />
-                    <div class="mt-3">
-                         <select class="custom-select" id="inputGroupSelect02">
-                            <option selected>Choose...</option>
-                            <option value="1">Computer Package</option>
-                         <option value="2">Laptop</option>
-                         <option value="3">Monitor</option>
-                         <option value="4">Graphic Card</option>
-                         <option value="5">Motherboard</option>
-                         <option value="6">Processor</option>
-                        </select>
-                        </div>
-                        <label for="formFileSm" class="form-label mt-3">Upload photo</label>
-                        <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                        <div class="form-outline">
-                        <textarea class="form-control mt-3" id="productdescription" rows="5" placeholder="Product Description"></textarea>
-        
-                        </div>                         
-                    <button class="btn btn-dark mt-3">Add Product</button>
-                    
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="mt-5">
         <h3>Group 4</h3>
