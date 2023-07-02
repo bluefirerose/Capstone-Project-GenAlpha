@@ -145,7 +145,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form class="m-5" id="addProduct">
+      <form class="m-5" id="addProduct" action="{{ route('products.store') }}" method="POST">
                     <input id="productname" class="form-control mt-3" type="text" name="productname" placeholder="Enter product name" required />
                     <input id="productprice" class="form-control mt-3" type="text" name="productprice" placeholder="Enter product price" required />
                     <div class="mt-3">

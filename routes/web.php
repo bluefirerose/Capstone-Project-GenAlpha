@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 
 
@@ -89,3 +90,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/userhome', [HomeController::class, 'index']);
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 });
+
+
+
+Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+
