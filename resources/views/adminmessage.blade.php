@@ -71,7 +71,7 @@
                 <div class="navbar-collapse" >
                     <ul class="navbar-nav mx-auto">
                         <li class=" px-lg-3">
-                            <a class="nav-link active" href="{{ url('admin') }}"><strong>Dashboard</strong></a>
+                            <a class="nav-link active" href="{{ url('admin') }}">Dashboard</a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('adminproduct') }}">Product</a>
@@ -86,7 +86,7 @@
                             <a class="nav-link active" href="{{ url('adminusers') }}">User</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('adminmessage') }}">Messages</a>
+                            <a class="nav-link active" href="{{ url('adminmessage') }}"><strong>Messages</strong></a>
                         </li>
                     </ul>
                 </div>

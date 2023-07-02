@@ -62,6 +62,22 @@ Route::get('/adminproduct', function () {
     return view('adminproduct');
 });
 
+Route::get('/adminlist', function () {
+    return view('adminlist');
+});
+
+Route::get('/adminmessage', function () {
+    return view('adminmessage');
+});
+
+Route::get('/adminprofile', function () {
+    return view('adminprofile');
+});
+
+Route::get('/adminusers', function () {
+    return view('adminusers');
+});
+
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/register', [AuthController::class, 'register'])->name('register');
     Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
