@@ -83,7 +83,7 @@
                                     <a class="nav-link active" href="{{ url('adminprofile') }}">Profile</a>
                                 </li>
                                 <li class="nav-item px-lg-3">
-                                    <a class="nav-link active" href="{{ url('adminlist') }}">Admin</a>
+                                    <a class="nav-link active" href="{{ url('admin/adminlist') }}">Admin</a>
                                 </li>
                                 <li class="nav-item px-lg-3">
                                     <a class="nav-link active" href="{{ url('adminusers') }}">User</a>

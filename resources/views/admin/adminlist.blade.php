@@ -42,11 +42,11 @@
                 <div class="container">
        <h1> Welcome, Admin {{ Auth::user()->username }}</h1>
     </div>
-                <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
-                @csrf
-                @method('DELETE')
-                <button class="btn btn-danger" type="submit">Logout</button>
-            </form>
+    <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
+                    @csrf
+                    <a href="route('logout')" onclick="event.preventDefault();
+                    this.closest('form').submit();"" class=" btn btn-danger" type="submit">Logout</a>
+                </form>
                 </p>
             </div>
         </div>
