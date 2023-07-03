@@ -76,7 +76,7 @@
                             <a class="nav-link active" href="{{ url('userabout') }}">About</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('userproduct') }}">Products</a>
+                            <a class="nav-link active" href="{{ url('userproduct') }}"><strong>Products</strong></a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('userorder') }}">Orders</a>
