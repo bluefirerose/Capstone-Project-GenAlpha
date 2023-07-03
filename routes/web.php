@@ -55,6 +55,10 @@ Route::get('/userhome', function () {
     return view('userhome');
 });
 
+Route::get('/userabout', function () {
+    return view('userabout');
+});
+
 Route::get('/admin', function () {
     return view('admin');
 });
