@@ -1,18 +1,18 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $table = 'adminproducts';
+    use HasFactory;
 
     protected $fillable = [
-        'productname',
-        'productprice',
-        'productcategory',
-        'productdescription',
-        'photo'
+        'title',
+        'price',
+        'product_code',
+        'description'
     ];
 }
