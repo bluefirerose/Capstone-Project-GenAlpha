@@ -114,3 +114,10 @@ Route::middleware('auth')->group(function () {
 
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
 
+
+
+Route::get('/layouts.app', function () {
+    return view('layouts.app');
+});
+ 
+Route::resource('/product', ProductController::class);
