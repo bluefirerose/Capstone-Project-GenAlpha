@@ -9,10 +9,9 @@ class Product extends Model
     protected $table = 'adminproducts';
 
     protected $fillable = [
-        'productname',
-        'productprice',
-        'productcategory',
-        'productdescription',
-        'photo'
+        'title',
+        'price',
+        'product_code',
+        'description'
     ];
 }
