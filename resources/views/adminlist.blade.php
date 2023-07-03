@@ -74,7 +74,7 @@
                             <a class="nav-link active" href="{{ url('admin') }}">Dashboard</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('adminproduct') }}">Product</a>
+                            <a class="nav-link active" href="{{ url('product') }}">Product</a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('adminprofile') }}">Profile</a>

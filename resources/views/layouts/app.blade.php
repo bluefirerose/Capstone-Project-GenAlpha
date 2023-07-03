@@ -9,6 +9,13 @@
   <body>
     @include('layouts.navbar')
  
+    <div class="col-10 d-flex flex-column flex-shrink-0 p-2 " style=" height: calc(100vh - 7.5rem); ">
+            <div class="card card-body flex-fill">
+                <div class="row">
+                @yield('body')
+                </div>
+            </div>
+        </div>
     <div class="container py-5">
         @yield('body')
     </div>

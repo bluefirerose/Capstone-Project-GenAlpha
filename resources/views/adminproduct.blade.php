@@ -102,7 +102,7 @@
                             <a class="nav-link active" href="{{ url('admin') }}">Dashboard</a>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link active" href="{{ url('adminproduct') }}"><strong>Product</strong></a>
+                            <a class="nav-link active" href="{{ url('product') }}"><strong>Product</strong></a>
                         </li>
                         <li class="nav-item px-lg-3">
                             <a class="nav-link active" href="{{ url('adminprofile') }}">Profile</a>
@@ -125,62 +125,10 @@
         <div class="col-10 d-flex flex-column flex-shrink-0 p-2 " style=" height: calc(100vh - 7.5rem); ">
             <div class="card card-body flex-fill">
                 <div class="row">
-                    <div class="col-md-10 flex-fill">
-                        <h3>Items</h3>
-                    </div>
-                    <div class="col-md-2 flex-fill">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Add item
-                    </button>
-                    </div>
+                    
                 </div>
-                <hr>
-
-                
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Add Product</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <form class="m-5" id="addProduct" action="{{ route('products.store') }}" method="POST">
-                    <input id="productname" class="form-control mt-3" type="text" name="productname" placeholder="Enter product name" required />
-                    <input id="productprice" class="form-control mt-3" type="text" name="productprice" placeholder="Enter product price" required />
-                    <div class="mt-3">
-                         <select class="custom-select" id="inputGroupSelect02">
-                            <option selected>Choose...</option>
-                            <option value="1">Computer Package</option>
-                         <option value="2">Laptop</option>
-                         <option value="3">Monitor</option>
-                         <option value="4">Graphic Card</option>
-                         <option value="5">Motherboard</option>
-                         <option value="6">Processor</option>
-                        </select>
-                        </div>
-                        <label for="formFileSm" class="form-label mt-3">Upload photo</label>
-                        <input class="form-control form-control-sm" id="formFileSm" type="file" />
-                        <div class="form-outline">
-                        <textarea class="form-control mt-3" id="productdescription" rows="5" placeholder="Product Description"></textarea>
-                    </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Add</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div class="displayproducts">
-            
-        </div>
-
-
             </div>
         </div>
-    </div>
 
     <footer class="mt-5">
         <h3>Group 4</h3>
