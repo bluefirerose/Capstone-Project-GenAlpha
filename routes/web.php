@@ -59,6 +59,18 @@ Route::get('/userabout', function () {
     return view('userabout');
 });
 
+Route::get('/userproduct', function () {
+    return view('userproduct');
+});
+
+Route::get('/userorder', function () {
+    return view('userorder');
+});
+
+Route::get('/usercontact', function () {
+    return view('usercontact');
+});
+
 Route::get('/admin', function () {
     return view('admin');
 });
