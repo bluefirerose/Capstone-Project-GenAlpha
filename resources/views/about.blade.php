@@ -273,7 +273,7 @@
     <div class="thumbnail">
         <img src="Grad_pic.jpg" alt="Rain" style="width:70%">
         <div class="caption">
-            <h5><bold>Rain Christian</bold></h5>
+            <h5><bold>Rain Christian Masangya</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
