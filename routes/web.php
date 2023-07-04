@@ -112,6 +112,22 @@ Route::middleware('auth')->group(function () {
 
 
 
+Auth::routes();
+   
+//Normal Users Routes List
+Route::middleware(['auth', 'user-access:user'])->group(function () {
+   
+    Route::get('/userhome', [HomeController::class, 'index'])->name('userhome');
+});
+   
+//Admin Routes List
+Route::middleware(['auth', 'user-access:admin'])->group(function () {
+   
+    Route::get('admin', [HomeController::class, 'admin'])->name('admin');
+});
+
+
+
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
 
 
