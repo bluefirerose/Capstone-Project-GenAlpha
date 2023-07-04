@@ -40,6 +40,144 @@
                 flex-direction: row;
             }
         }
+        footer{
+          background: #FCA75B;
+          width: 100%;
+
+          bottom: 0;
+          color: #fff;
+          padding: 100px 0 30px;
+          margin-top : 100px;
+          border-top-left-radius: 125px;
+          font-size:13px;
+          line-height: 20px;
+        }
+
+        footer .row{
+          width: 85%;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-between:
+        }
+
+        footer .col{
+          flex-basis: 30%;
+          padding: 10px;
+          margin-right: 30px;
+        }
+
+        footer .col:nth-child(2), .col:nth-child(3){
+          flex-basis: 15%;
+        }
+
+
+
+        footer .logo{
+          width: 100px;
+          margin-bottom: 30px;
+        }
+
+        footer .col h3{
+          width: fit-content;
+          margin-bottom: 40px;
+          position: relative;
+        }
+
+        footer .email-id{
+          width: fit-content;
+          border-bottom: 1px solid #ccc;
+          margin: 20px 0;
+        }
+
+        footer ul li {
+          list-style: none;
+          margin-bottom:12px;
+        }
+
+        footer ul li a{
+          text-decoration: none;
+          color: #fff;
+        }
+
+        footer form {
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 50px;
+        }
+
+        footer form .far{
+          font-size: 18px;
+          margin-right :10px;
+        }
+
+        footer form input{
+          width: 100%;
+          background: transparent;
+          color: white;
+          border: 0;
+          outline: none;
+          margin-left: 10px;
+        }
+
+        footer form button{
+          background: transparent;
+          border:0;
+          outline: none;
+          cursor: pointer;
+        }
+
+        footer form button .fas{
+          font-size: 16px;
+          color: white;
+        }
+
+        footer .social-icons .fab{
+          width:40px;
+          height: 40px;
+          border-radius: 50px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 20px;
+          color: #000;
+          background: #fff;
+          margin-right: 15px;
+          cursor: pointer;
+        }
+
+        .underline{
+          width:100%;
+          height: 5px;
+          background: #767676;
+          border-radius: 3px;
+          position: absolute;
+          top:35px;
+          left:0;
+          overflow: hidden;
+        }
+
+        .underline span{
+          width: 15px;
+          height: 100%;
+          background: #fff;
+          border-radius: 3px;
+          position: absolute;
+          top:0;
+          left: 10px;
+          animation: moving 2s linear infinite;
+        }
+
+        @keyframes moving{
+          0%{
+            left: -20px;
+          }
+          100%{
+            left: 100%;
+          }
     </style>
 <body>
 <header class="bg-dark text-white">
@@ -196,5 +334,52 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="row">
+          <div class="col">
+            <img src="gen-alpha-removebg-1.svg" class="logo">
+            <p> asdfsadfgalsfjl;qakdjsf ;lsadjknf;laj snl;adsf sadfasdfsdf
+              sdfasdfsadfsadfsadf sdfasd f sdafas df
+            </p>
+          </div>
+          <div class="col">
+            <h3>Office
+              <div class="underline"> <span></span></div></h3>
+            <p>ITPL Road</p>
+            <p>Whitefield Bangalore</p>
+            <p>Kartana, PIN 8000, PH</p>
+            <p class="email-id">alphagen@gmail.com</p>
+            <p>+63 991 337 4457</p>
+          </div>
+            <div class="col">
+              <h3>Links
+                <div class="underline"> <span></span></div></h3>
+              </h3>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Products</a></li>
+              </ul>
+            </div>
+              <div class="col">
+                <h3>Newsletter
+                  <div class="underline"> <span></span></div></h3>
+                </h3>
+                <form>
+                  <i class="far fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id" required>
+                  <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-youtube"></i>
+                </div>
+          
+        </div>
+    </footer>
 </body>
 </html>
