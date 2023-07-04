@@ -261,7 +261,7 @@
                     <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="Grad_pic.jpg" alt="Rain" style="width:70%">
+        <img src="/developers/Grad_pic.jpg" alt="Rain" style="width:70%">
         <div class="caption">
             <h5><bold>Rain Christian</bold></h5>
           <small>Full-Stack Developer</small>
