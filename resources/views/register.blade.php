@@ -498,8 +498,7 @@ form.sign-in-form {
           <div class="content">
             <h3>New here ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+            We're excited to have you on board. Please fill out the required information below to create your new account and unlock a world of opportunities.
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -511,8 +510,7 @@ form.sign-in-form {
           <div class="content">
             <h3>One of us ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+            For our valued users, please log in to access your account and unlock a world of possibilities.
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Sign in
