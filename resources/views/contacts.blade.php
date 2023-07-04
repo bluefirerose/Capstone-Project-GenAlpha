@@ -200,6 +200,16 @@
     <title>Contacts</title>
 </head>
 <body>
+<header class="bg-dark text-white">
+    <div class="banner" data-bs-theme="dark">
+            <div class="d-flex justify-content-end">
+                <p class=" px-lg-3 d-inline-flex">
+                    <a class="nav-link active" href="{{ url('login') }}">Login /</a> 
+                    <a class="nav-link active" href="{{ url('register') }}"> Sign up</a>
+                </p>
+            </div>
+        </div>
+    </header>
 <header>
         <nav class="navbar navbar-expand-lg ms-1" >
             <div class="container-fluid">
