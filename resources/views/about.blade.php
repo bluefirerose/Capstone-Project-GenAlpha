@@ -273,7 +273,7 @@
     <div class="thumbnail">
         <img src="donald.png" alt="Donald" style="width:70%">
         <div class="caption m-3">
-        <h5><bold>Donald</bold></h5>
+        <h5><bold>Donald Saldo</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
