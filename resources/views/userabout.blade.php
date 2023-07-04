@@ -270,7 +270,7 @@
     <div class="thumbnail">
         <img src="/developers/Grad_pic.jpg" alt="Rain" style="width:70%">
         <div class="caption">
-            <h5><bold>Rain Christian</bold></h5>
+            <h5><bold>Rain Christian Masangya</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
@@ -278,9 +278,9 @@
   </div>
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="pc.svg" alt="Donald" style="width:70%">
+        <img src="donald.png" alt="Donald" style="width:70%">
         <div class="caption ">
-        <h5><bold>Donald</bold></h5>
+        <h5><bold>Donald Saldo</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>

@@ -189,6 +189,16 @@
     </style>
 </head>
 <body>
+<header class="bg-dark text-white">
+    <div class="banner" data-bs-theme="dark">
+            <div class="d-flex justify-content-end">
+                <p class=" px-lg-3 d-inline-flex">
+                    <a class="nav-link active" href="{{ url('login') }}">Login /</a> 
+                    <a class="nav-link active" href="{{ url('register') }}"> Sign up</a>
+                </p>
+            </div>
+        </div>
+    </header>
     <header>
         <nav class="navbar navbar-expand-lg ms-1" >
             <div class="container-fluid">
@@ -263,7 +273,7 @@
     <div class="thumbnail">
         <img src="/developers/Grad_pic.jpg" alt="Rain" style="width:70%">
         <div class="caption">
-            <h5><bold>Rain Christian</bold></h5>
+            <h5><bold>Rain Christian Masangya</bold></h5>
           <small>Full-Stack Developer</small>
         </div>
       </a>
