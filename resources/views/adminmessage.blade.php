@@ -97,12 +97,7 @@
         <div class="col-10 d-flex flex-column flex-shrink-0 p-2 " style=" height: calc(100vh - 7.5rem); ">
             <div class="card card-body flex-fill">
                 <div class="row">
-                    <div class="col-2 flex-fill" style="border-right: 1px solid black;">
-                        first column - the border line should extend to the bottom of the parent card
-                    </div>
-                    <div class="col-10 flex-fill">
-                                    second column
-                    </div>
+                  
                 </div>
             </div>
         </div>
