@@ -278,7 +278,7 @@
   </div>
   <div class="col-md-4">
     <div class="thumbnail">
-        <img src="pc.svg" alt="Donald" style="width:70%">
+        <img src="donald.png" alt="Donald" style="width:70%">
         <div class="caption ">
         <h5><bold>Donald</bold></h5>
           <small>Full-Stack Developer</small>
