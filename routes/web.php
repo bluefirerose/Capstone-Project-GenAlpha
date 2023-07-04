@@ -107,6 +107,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
+route::middleware(['auth', 'isAdmin'])->group(function () {
+    return view('admin');
+});
+
 
 
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
